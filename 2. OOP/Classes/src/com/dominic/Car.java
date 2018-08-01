@@ -2,6 +2,8 @@ package com.dominic;
 
 public class Car {
 
+    private static String Unknown = "Unknown";
+
     private int doors;
     private int wheels;
     private String model;
@@ -13,7 +15,7 @@ public class Car {
         if (validModel.endsWith("Carrera") || validModel.equals("r8")) {
             this.model = model;
         } else {
-            this.model = "Unknown";
+            this.model = Unknown;
         }
 
     }
